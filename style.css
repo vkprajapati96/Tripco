@@ -11,6 +11,10 @@ body {
     background-color: white;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .nav-container,
 .hero-container {
     width: 100%;
@@ -28,7 +32,9 @@ body {
 }
 
 .nav-logo {
-    font-size: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(24 167 199);
 }
 
 .nav-pages {
@@ -105,7 +111,7 @@ body {
     height: 80vh;
     position: relative;
 
-    
+
 }
 
 .hero-img-text {
@@ -191,6 +197,8 @@ body {
 .hero-banner-d1-paras p {
     font-size: 1.1rem;
     color: gray;
+    font-weight: 500;
+    /* border: 1px solid yellowgreen; */
 }
 
 #hostelry {
@@ -219,7 +227,7 @@ body {
 
 .hero-banner-d2 {
     /* border: 1px solid ;   */
-    margin-top: .8rem;
+    margin-top: 1rem;
     color: gray;
 }
 
@@ -239,7 +247,9 @@ body {
 
 
 .hero-banner-d2-desti-places {
+    /* border: 1px solid salmon; */
     flex: 1;
+    /* font-weight: 600; */
 
 }
 
@@ -256,11 +266,12 @@ body {
     align-items: center;
     font-size: 17px;
     font-weight: 500;
+    /* font-family: sans-serif; */
 }
 
 .hero-banner-d2-desti-place i {
     color: rgb(24 167 199);
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
 }
 
 
@@ -286,6 +297,156 @@ body {
 .hero-banner-d2-desti-places-search-btn i {
     font-size: 1.2rem;
 }
+
+/* popular Place */
+
+.popular-container {
+    width: 100%;
+    /* margin: 0 auto; */
+    /* border: 1px solid black; */
+    margin-top: 4rem;
+
+}
+
+.popular-main {
+    max-width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.popular-d1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.popular-title {
+    /* font-size: 1.5rem; */
+}
+
+.popular-title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.popular-title p {
+    font-size: 1.3rem;
+    color: grey;
+    padding: 4px 0 0 0;
+}
+
+.popular-desc {
+    color: gray;
+    /* padding: 0 8px 0 0 ; */
+    margin-right: 4.5rem !important;
+    font-weight: 500;
+    font-family: serif;
+}
+
+.popular-cards {
+    width: 100%;
+    /* border: 1px solid violet; */
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    overflow-x: auto;
+
+}
+
+.popular-card {
+    /* border: 1px solid black; */
+
+    width: 293px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.popular-card-img {
+    width: 293px;
+    height: 295px;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.popular-card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#popular-card-img-badge {
+    position: absolute;
+    top: 8%;
+    /* left: ; */
+    right: 8%;
+    background-color: #f0f0f0;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 6px;
+    border-radius: 8px;
+
+}
+
+
+.popular-img-title {
+    margin-top: 14px;
+
+}
+
+.popular-img-title h5 {
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+
+.popular-img-title p {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 15px;
+    margin-top: 4px;
+    /* padding:0 0 0 0 ; */
+    color: gray;
+
+}
+
+.popular-img-title p i {
+    font-size: 1rem;
+    color: rgb(24 167 199);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -315,7 +476,7 @@ body {
         position: relative;
     }
 
-    .hero-banner-d1{
+    .hero-banner-d1 {
         /* border: 1px solid blueviolet; */
         overflow: hidden;
         display: flex;
@@ -327,42 +488,44 @@ body {
         /* gap:px; */
 
     }
-    .hero-banner-d1-paras{
-    display: flex;
-    overflow:  hidden;
-    align-items: center;
-    /* justify-content:flex-start !important; */
-    gap: 5px;
-    /* margin-top: 20px; */
-    padding: 8px 0 8px  0;
-    
+
+    .hero-banner-d1-paras {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        /* justify-content:flex-start !important; */
+        gap: 5px;
+        /* margin-top: 20px; */
+        padding: 8px 0 8px 0;
+
     }
-    .hero-banner-d1-paras p{
+
+    .hero-banner-d1-paras p {
         /* border: 1px solid red; */
-        font-size:11px !important;
+        font-size: 11px !important;
         flex-shrink: 0;
         /* width: 100%; */
         height: 100%;
-        padding:2px;
+        padding: 2px;
         font-weight: 600;
 
     }
 
-#hostelry {
-    color: black;
-}
+    #hostelry {
+        color: black;
+    }
 
-#hostelry::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background: black;
+    #hostelry::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background: black;
 
 
-}
+    }
 
     .hero-banner-d1-last-searching {
         font-size: 11px;
@@ -374,40 +537,40 @@ body {
         padding: 0;
         flex-shrink: 0;
     }
-    
-    
+
+
     .hero-banner {
         margin: 0 auto;
         max-width: 95%;
-        
+
         /* border: 1px solid ; */
         /* display: flex; */
         /* flex-direction: column; */
     }
-    
+
 
     .hero-img {
         border-radius: 50px;
         width: 100%;
         height: 40vh;
         position: relative;
-    
+
     }
-   
+
     .hero-img img {
         border-radius: 50px;
         width: 100%;
         height: 60vh;
         /* position: relative; */
-    
+
     }
-   
+
     .hero-img-text {
         position: absolute;
         top: 10%;
         left: 20%;
-    
-    
+
+
     }
 
     .hero-img-text {
@@ -415,9 +578,10 @@ body {
         top: 15%;
         left: 5%;
         /* border: 1px solid; */
-    
-    
+
+
     }
+
     #hero-img-text1 {
         font-family: sans-serif;
         color: white;
@@ -426,33 +590,33 @@ body {
         font-weight: 600;
         text-align: center;
     }
-    
-    
-#hero-img-text2 {
-    color: white;
-    z-index: 999;
-    font-size: 10px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 40px;
-    /* padding:; */
-    margin: 0;
-}
+
+
+    #hero-img-text2 {
+        color: white;
+        z-index: 999;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 40px;
+        /* padding:; */
+        margin: 0;
+    }
 
     .hero-banner-container {
-    position: absolute;
-    overflow: hidden;
-    top: 80%;
-    left:2%;
-    margin: 0 auto;
-    width:96%;
-    height: 47vh;
-    background-color: white;
-    box-shadow: 0 0 10px grey;
-    border-radius: 20px;
-    /* border: 1px solid red; */
-    /* box-shadow: 0 0 4px #f0f0f0; */
-}
+        position: absolute;
+        overflow: hidden;
+        top: 80%;
+        left: 2%;
+        margin: 0 auto;
+        width: 96%;
+        height: 47vh;
+        background-color: white;
+        box-shadow: 0 0 10px grey;
+        border-radius: 20px;
+        /* border: 1px solid red; */
+        /* box-shadow: 0 0 4px #f0f0f0; */
+    }
 
 
     .hero-banner-d2-desti {
@@ -460,7 +624,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 8px;
-        grid-row-gap:   8px;
+        grid-row-gap: 8px;
 
     }
 
@@ -472,12 +636,13 @@ body {
         font-weight: 600;
         text-align: center;
     }
+
     .hero-banner-d2-desti-places {
         flex: 1;
         font-size: 13px;
-    
+
     }
-    
+
     .hero-banner-d2-desti-place {
         background: #f0f0f0;
         padding: 8px;
@@ -490,25 +655,125 @@ body {
         /* display: flex; */
         align-items: center;
         font-size: 12px;
-        font-weight:600;
+        font-weight: 600;
         /* box-shadow: ; */
         /* border: 1px solid green; */
     }
 
     .hero-banner-d2-desti-place i {
         font-size: 1rem;
-    }    
+    }
 
-    .hero-banner-d2-desti-places-search-btn{
-        margin-top:10px;
-        grid-row-start:4;
-        grid-row-end:4;
-        grid-column-start:1;
-        grid-column-end:3;
+    .hero-banner-d2-desti-places-search-btn {
+        margin-top: 5px;
+        /* grid-row-start:4; */
+        /* grid-row-end: 4; */
+        grid-column-start: 1;
+        grid-column-end: 3;
 
         width: 100%;
     }
 
+    .popular-container {
+        margin-top: 15rem;
+    }
 
+    /* popular sections */
+    .popular-d1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popular-title h2 {
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+
+    .popular-title p {
+        font-size: .9rem;
+        text-align: center;
+        color: grey;
+        padding: 4px 0 0 0;
+    }
+
+    .popular-desc {
+        color: gray;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 500;
+        font-family: serif;
+        margin-right: 0 !important;
+        margin-top: 7px;
+    }
+
+    .popular-desc br {
+        display: none;
+    }
+
+    .popular-cards {
+        width: 100%;
+        display: flex;
+        gap: 2.5rem;
+        margin-top: 1.5rem;
+        overflow-x: auto;
+        padding: 0 .7rem;
+
+    }
+
+    .popular-card {
+        overflow-y: hidden;
+        width: 300px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .popular-card-img {
+        width: 300px;
+        height: 295px;
+        border-radius: 40px;
+        position: relative;
+
+    }
+
+    .popular-card-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .popular-img-title {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 8px;
+
+    }
+
+    .popular-img-title h5 {
+        font-weight: 600;
+        font-size: 14px;
+        color: black;
+    }
+
+    .popular-img-title p {
+        font-weight: 600;
+        font-size: 14px;
+        color: gray;
+
+    }
+
+    .popular-img-title p i {
+        font-size: .8rem;
+        color: rgb(24 167 199);
+    }
 
 }
