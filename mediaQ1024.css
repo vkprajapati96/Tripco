@@ -1,0 +1,613 @@
+@media only screen and (max-width:1024px) {
+/* navbar */
+
+.nav-container {
+    width: 100%;
+    background-color: white;
+    /* border: 1px solid ; */
+}
+
+.nav {
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    max-width: 90%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.nav-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(24 167 199);
+}
+
+
+.nav-pages {
+    /* border: 1px solid; */
+}
+
+.nav-pages ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.nav-pages ul li:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+
+}
+
+.nav-pages ul li {
+    font-size: 1.1rem;
+    color: grey;
+    font-weight: 500;
+
+}
+
+.nav-signup {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-signup p {
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.nav-signup button {
+
+    padding: .6rem 1rem;
+    background-color: rgb(24 167 199);
+    border: none;
+    /* outline: none; */
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-menu {
+    /* width: 1rem; */
+    /* height: 1rem;/ */
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+ /* hero */
+ .hero-img {
+    position: relative; /* Parent ko relative rakhna zaroori hai */
+    width: 100%;
+    height: 40vh;
+    border-radius: 50px;
+    overflow: hidden; /* Extra content hide karne ke liye */
+}
+
+ .hero-img img {
+    overflow: hidden;
+    border-radius: 50px;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+
+
+.hero-img-text {
+    position: absolute; /* Absolute for positioning */
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering trick */
+    text-align: center;
+    color: white;
+    z-index: 999; /* Text image ke upar rahe */
+    width: 100%;
+    padding: 10px;
+}
+
+#hero-img-text1 {
+    font-size: clamp(1.2rem, 3vw, 3rem); /* Responsive font-size */
+    font-weight: 700;
+    margin-bottom: 10px;
+    z-index: 999;
+}
+
+#hero-img-text2 {
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    font-weight: 500;
+}
+
+
+.hero-banner{
+/* border: 1px solid ; */
+/* padding: auto; */
+/* padding: 1rem 0 0 0; */
+margin-top:1rem;
+/* margin: 48px 12px; */
+
+}
+.hero-banner-container {    
+position: absolute;
+top: 28%;
+left: 2%;
+/* margin: 0 auto; */
+width: 95%;
+height: 20vh;
+background-color: white;
+box-shadow: 2px 2px 1px #f0f0f0;
+border-radius: 20px;
+/* border: 1px solid red; */
+/* box-shadow: 0 0 4px #f0f0f0; */
+}
+
+.hero-banner-d2-desti-place {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: .7rem;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    /* font-family: sans-serif; */
+}
+
+
+.hero-banner-d2-desti-places-search-btn {
+    
+}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 425px) {
+    /* Navbar section */
+    .nav-pages {
+        display: none;
+    }
+
+    .nav-signup {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+
+    /* hero section */
+
+    .hero {
+        /* border-radius: 50px; */
+        /* max-width: 100%; */
+        height: 40vh !important;
+        /* margin: 0 auto; */
+        /* border: 1px solid red;  */
+        position: relative;
+
+    }
+
+    .hero-banner-d1 {
+        /* border: 1px solid blueviolet; */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 10px;
+        border-bottom: 1px solid gray;
+        /* gap:px; */
+
+    }
+
+    .hero-banner-d1-paras {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        /* justify-content:flex-start !important; */
+        gap: 5px;
+        /* margin-top: 20px; */
+        padding: 8px 0 8px 0;
+
+    }
+
+    .hero-banner-d1-paras p {
+        /* border: 1px solid red; */
+        font-size: 11px !important;
+        flex-shrink: 0;
+        /* width: 100%; */
+        height: 100%;
+        padding: 2px;
+        font-weight: 600;
+
+    }
+
+    #hostelry {
+        color: black;
+    }
+
+    #hostelry::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background: black;
+
+    }
+
+    .hero-banner-d1-last-searching{
+        font-size: 11px;
+        font-weight: 600;
+        color: grey;
+        display: flex;
+        /* grid-area: 4px; */
+        align-items: center;
+        padding: 0;
+        flex-shrink: 0;
+    }
+
+
+    .hero-banner {
+        margin: 0 auto;
+        max-width: 95%;
+
+    }
+
+
+    .hero-img {
+        position: relative; 
+        width: 100%;
+        height: 50vh;
+        border-radius: 50px;
+        overflow: hidden; 
+    }
+    
+    .hero-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 50px;
+    }
+    
+    .hero-img-text {
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 999; 
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #hero-img-text1 {
+        font-size: clamp(1rem, 3vw, 2rem);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    #hero-img-text2 {
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
+        font-weight: 500;
+    }
+    
+.hero-banner-container {
+    position: absolute;
+    overflow: hidden;
+    top: 70%;
+    left: 2%;
+    margin: 0 auto;
+    width: 96%;
+    height: 47vh;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    border-radius: 20px;
+    /* border: 1px solid red; */
+    /* box-shadow: 0 0 4px #f0f0f0; */
+}
+
+
+.hero-banner-d2-desti {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+
+}
+
+
+.hero-banner-d2-desti-places {
+    flex: 1;
+    font-size: 13px;
+
+}
+
+.hero-banner-d2-desti-place {
+    background: #f0f0f0;
+    padding: 8px;
+    border-radius: 5px;
+    /* margin-top: .7rem; */
+    /* color: black; */
+    font-weight: 500;
+    /* display: flex; */
+    /* gap: 4px; */
+    /* display: flex; */
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    /* box-shadow: ; */
+    /* border: 1px solid green; */
+}
+
+.hero-banner-d2-desti-place i {
+    font-size: 1rem;
+}
+
+.hero-banner-d2-desti-places-search-btn {
+    margin-top: 5px;
+    /* grid-row-start:4; */
+    /* grid-row-end: 4; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    width: 100%;
+}
+
+/* popular sections */
+.popular-container {
+    margin-top: 15rem;
+}
+
+.popular-d1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popular-title h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.popular-title p {
+    font-size: .9rem;
+    text-align: center;
+    color: grey;
+    padding: 4px 0 0 0;
+}
+
+.popular-desc {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    font-family: serif;
+    margin-right: 0 !important;
+    margin-top: 7px;
+}
+
+.popular-desc br {
+    display: none;
+}
+
+.popular-cards {
+    gap: 1.2rem; 
+}
+
+.popular-card {
+    width: 90vw; 
+    height: 330px;
+}
+
+.popular-card-img {
+    height: 260px; 
+    border-radius: 30px;
+}
+
+.popular-card-img img {
+    border-radius: 25px;
+}
+
+.popular-img-title h5 {
+    font-size: 4vw; 
+}
+
+.popular-img-title p {
+    font-size: 3.5vw;
+}
+
+
+.popular-img-title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 8px; */
+
+}
+
+.popular-img-title h5 {
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+
+.popular-img-title p {
+    font-weight: 600;
+    font-size: 14px;
+    color: gray;
+
+}
+
+.popular-img-title p i {
+    font-size: .8rem;
+    color: rgb(24 167 199);
+}
+/* travel section */
+
+.travel-container {
+    width: 100%;
+    background: white;
+    /* margin-top: 4rem; */
+    border: 1px solid ;
+
+}
+.travel-main {
+    max-width: 90vw;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+    gap: 2rem;
+    /* padding-top: 1rem; */
+
+}
+
+
+
+.travel-des {
+    width: 100%;
+    display: flex;
+    /* padding: 0; */
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+    /* justify-content: space-between; */
+    /* margin: 0; */
+    /* padding: 1rem 2rem 0 2rem; */
+    border: 1px solid;
+
+}
+
+.travel-des-card {
+    /* margin-right: 3.5rem; */
+    border-radius: 15px;
+    width:100%;
+    height: 60vh;
+    border: 1px solid;
+    overflow: hidden;
+
+}
+
+.travel-des-card-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.travel-des-card-img img {
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.travel-des-d1 {
+    /* border-radius: 15px; */
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 0 10px 6px;
+    border: 1px solid;
+    overflow: hidden;
+}
+.travel-des-d1-text {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    padding: 10px 0 0 10px;
+    border: 1px solid;
+}
+
+.card-badge {
+    width: 25vw;
+    height: 6vh;
+
+    /* border:1px solid; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+    box-shadow: 0 0 7px #f0f0f0;
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    /* padding: 4px ; */
+}
+
+.card-badge img {
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+
+.card-badge-para-name {
+    color: black;
+    font-size: .7rem;
+    /* font-weight: ; */
+    /* padding-right:2px ; */
+
+}
+
+.card-badge-para:nth-child(2) {
+    color: gray;
+    font-size: .7rem;
+
+}
+
+
+.card-badge-para:nth-child(2) p i {
+    color: yellow;
+    font-size: .7rem;
+
+}
+
+.badge2 {
+    position: absolute;
+    top: 80%;
+}
+
+.badge3 {
+    position: absolute;
+    top: 40%;
+    /* left: 78%; */
+}
+
+
+
+    
+}
