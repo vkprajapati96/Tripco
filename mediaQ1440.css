@@ -1297,4 +1297,27 @@
 
 
 
+
+@media only screen and (max-width:1024px) {
+
+    .explore-d1 {
+        display: grid ;
+        /* justify-content: space-between; */
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        /* padding-left: 12px; */
+        border: 1px solid;
+    }
+
+    .explore-desc {
+        color: gray;
+        /* padding: 0 8px 0 0; */
+        margin-right:0;
+        font-weight: 500;
+        font-family: serif;
+    }
+}
+
+
+
 @media only screen and (max-width:10px) {}
