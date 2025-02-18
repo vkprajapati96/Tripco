@@ -27,6 +27,7 @@ body {
     background-color: white;
 }
 
+
 .nav {
     margin: 0 auto;
     max-width: 90%;
@@ -36,6 +37,8 @@ body {
     justify-content: space-between;
     padding: 1.2rem 0;
 }
+
+
 
 .nav-logo {
     font-size: 2rem;
@@ -357,7 +360,7 @@ body {
 }
 
 .popular-title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -480,14 +483,14 @@ body {
 }
 
 .travel-title h2 {
-    font-size: clamp(1.8rem, 4vw, 2.5rem); /* Min 1.8rem, Max 2.5rem */
+    font-size: 2rem; /* Min 1.8rem, Max 2.5rem */
     text-align: center;
 }
 
 .travel-title p {
     color: gray;
-    font-weight: 600;
-    font-size: clamp(1rem, 3.5vw, 1.25rem); /* Min 1rem, Max 1.25rem */
+    /* font-weight: 600; */
+    font-size: 1.3rem; /* Min 1rem, Max 1.25rem */
     text-align: center;
     margin-top: 1vh;
 }
@@ -691,12 +694,12 @@ body {
 }
 
 .explore-title h2 {
-    font-size: 3.2vw;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .explore-title p {
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     color: grey;
     padding: 8px 0 0 6px;
 }
@@ -880,12 +883,12 @@ gap: 0;
     margin: 0 auto;
     margin-top: 5vh;
     /* text-align: center; */
-    width: 8vw;
-    height: 5.5vh;
+    width: 150px;
+    height:50px;
     border: 1px solid gray;
     /* padding: 2.5vh 0; */
     border-radius: .5vw;
-    font-size: 1vw;
+    font-size: 1rem;
     font-weight: 600;
     background-color:white;
 }
@@ -910,11 +913,11 @@ gap: 0;
     gap: 1.5vh;
 }
 .adv-title h2{
-    font-size: 3vw;
+    font-size: 2rem;
     /* font-weight: 600; */
 }
 .adv-title p{
-    font-size: 1.8vw;
+    font-size: 1.3rem;
     text-align: center;
     color: gray;
 }
@@ -987,7 +990,7 @@ border: 1px solid black;
     color: gray;
     letter-spacing: .2vw;
     /* border: 1px solid; */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 
 }
@@ -1012,6 +1015,7 @@ color: gray;
 
  */
 
+
 /* book ticket section */
 
 .ticket-container{
@@ -1034,7 +1038,7 @@ color: gray;
 }
 
 .ticket-title h2{
-    font-size: 2.3vw;
+    font-size: 2rem;
     /* font-weight:; */
 
 }
@@ -1169,6 +1173,7 @@ font-size: 1rem;
 }
 .footer-news p{
 font-size: 1rem;
+color: gray;
 }
 .footer-inp{
 position: relative;

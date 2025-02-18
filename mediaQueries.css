@@ -207,7 +207,7 @@
 
     .hero-banner-container {
         position: absolute;
-        bottom: -20%;
+        bottom: -10%;
         left: 10%;
         right: 10%;
         /* margin: 0 auto; */
@@ -245,7 +245,7 @@
 
     .hero-banner-container {
         position: absolute;
-        bottom: -10%;
+        bottom: -30%;
         left: 10%;
         right: 10%;
         /* margin: 0 auto; */
@@ -330,7 +330,7 @@
     }
     .hero-banner-container {
         position: absolute;
-        bottom: -10%;
+        bottom: -20%;
         left: 10%;
         right: 10%;
         /* margin: 0 auto; */
@@ -634,11 +634,6 @@
 
 
 
-
-
-
-
-
 @media only screen and (max-width:480px) {
     .hero-banner-d1-paras {
         display: flex;
@@ -696,6 +691,24 @@
 
 
 @media only screen and (max-width:425px) {
+    .hero-banner-container {
+        position: absolute;
+        bottom: -120px;
+        left: 10%;
+        right: 10%;
+        /* margin: 0 auto; */
+        padding: 1rem;
+        /* width: 90%; */
+        /* height: 30vh; */
+        background-color: white;
+        box-shadow: 2px 2px 1px #f0f0f0;
+        border-radius: 20px;
+        text-wrap: nowrap;
+    }
+    .hero-banner-d1-paras {
+        display: flex;
+        gap: 1.5rem;
+    }
     .hero-banner-d2-desti {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -727,16 +740,14 @@
 
     
     .hero-banner-d2-desti {
-        display: grid
-;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: .2rem;
-        grid-row-gap: .2rem;
+        grid-column-gap: 3rem;
+        grid-row-gap: .5rem;
         flex-wrap: wrap;
         /* gap: .2rem; */
     }
-
     .hero-banner-d2-desti-place {
         background: #f0f0f0;
         padding: .3rem .5rem;
@@ -756,22 +767,37 @@
 
     .hero-banner-d2-desti-places-search-btn {
         margin-top: 5px;
-        width: 80%;
+        width: 85%;
     }
 
     .hero-banner-d2-desti-places1{
     font-size: .6rem;
     }
 
+    .hero-banner-d2-desti-place i {
+        color: rgb(24 167 199);
+        font-size: .7rem;
+    }
+    #hostelry::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: black;
+    }
+
+   
     .hero-banner-d1-paras p {
-        font-size: .5rem;
+        font-size: .6rem;
         color: gray;
         /* font-weight: 500; */
         /* border: 1px solid yellowgreen; */
     }
 
     .hero-banner-d1-last-searching {
-        font-size: .5rem;
+        font-size: .6rem;
         color: grey;
         display: flex
 ;
@@ -796,6 +822,14 @@
         /* padding-block: 2rem; */
         text-align: center;
         line-height: 20px;
+    }
+    .hero-banner-d1-last-searching {
+        font-size: .6rem;
+        color: grey;
+        display: flex;
+        gap: .3rem;
+        align-items: center;
+        display: none;
     }
 }
 
@@ -1061,10 +1095,9 @@
     }
 
     .popular-img-title {
-        justify-content: space-between;
         margin-top: 14px;
         display: flex;
-        /* padding-left: 5px; */
+        flex-direction: column;
     }
 
     .popular-img-title p {
@@ -1080,6 +1113,30 @@
 }
 
 
+@media only screen and (max-width:542px) {
+    .popular-container {
+        width: 100%;
+        /* margin: 0 auto; */
+        /* border: 1px solid black; */
+        margin-top: 8rem;
+        padding-top: 3rem;
+    }
+    .popular-title p {
+        color: grey;
+        padding: 4px 0 0 0;
+        font-size: 1rem;
+    }
+
+    .popular-desc {
+        text-align: center;
+        color: gray;
+        padding: .2rem 0 0 0;
+        font-weight: 500;
+        font-family: serif;
+        /* border: 1px solid; */
+        font-size: .9rem;
+    }
+}
 
 @media only screen and (max-width:425px) {
     .popular-d1 {
@@ -1130,6 +1187,30 @@
     }
 }
 
+@media only screen and (max-width:320px) {
+    .popular-container {
+        width: 100%;
+        /* margin: 0 auto; */
+        /* border: 1px solid black; */
+        margin-top: 8rem;
+        padding-top: 3rem;
+    }
+
+    .popular-title p {
+        color: grey;
+        padding: 4px 0 0 0;
+        font-size: .7rem;
+    }
+    .popular-desc {
+        text-align: center;
+        color: gray;
+        padding: .7rem 0 0 0;
+        font-weight: 500;
+        font-family: serif;
+        /* border: 1px solid; */
+        font-size: .7rem;
+    }
+}
 
 @media only screen and (max-width:1024px) {
  .footer-main{
@@ -1197,7 +1278,7 @@
         border: none;
         width: 100%;
         height: 3.5rem;
-        padding-left: 1vw;
+        /* padding-left: 1vw; */
         color: grey;
         box-shadow: 0 7px 10px #f0f0f0;
     }
@@ -1222,41 +1303,93 @@
 
     }
 
+
+    @media (min-width:425px) and (max-width:680px) {
+      
+        .footer-inp {
+            position: relative;
+            margin-top: 1vh;
+            width: 100%;
+            display: grid;
+                 
+        }
+    
+        .footer-inp input {
+            font-size: 11px;
+            border: none;
+            width: 100%;
+            height: 3.5rem;
+            /* padding-left: 1vw; */
+            color: grey;
+            box-shadow: 0 7px 10px #f0f0f0;
+        }
+        .footer-news button {
+            border: none;
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            top: 30%;
+            right: 10%;
+            border-radius: 4vh;
+            background-color: rgb(24 167 199);
+        }
+    
+        .footer-news button i {
+            padding: 2px;
+            font-size: 1rem;
+            color: white;
+        }
+        
+          
+    }
+
 @media only screen and (max-width:425px) {
     .footer-main{
         /* border: 1px solid; */
         display: grid;
         gap: 5rem;
         grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
       }   
     
       .tripco-footer {
         /* border: 1px solid black; */
-        display: flex
-    ;
+        display: flex;
         flex-direction: column;
         gap: 2rem;
         padding-left: 3rem;
+        /* display: grid; */
     }
 
     #footer-about3{
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 3rem;
         padding: 0;
         /* align-items: center; */
         /* justify-content: flex-start; */
+    }
+    #footer-about-para1 {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        color: grey;
+        align-items: center;
     }
 
     .footer-news {
         display: flex
     ;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
         /* padding-left: 3rem; */
         /* max-width: 00px; */
         /* justify-content: flex-start; */
         /* border: 1px solid; */
+        align-items: center;
        }
 
 
@@ -1267,15 +1400,32 @@
         /* border: 1px solid; */
         }
         
+        .footer-about {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            justify-content: flex-start;
+        }
 
+        #footer-about3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            padding: 0;
+            /* align-items: center; */
+            /* justify-content: flex-start; */
+        }
 
         .footer-inp input{
             /* border: 1px solid; */
         width: 100%;
-        height: 3.5rem;
+        height: 3rem;
         padding-left: .8vw;
         color: grey;
-        box-shadow: 0 7px 10px #f0f0f0 ;
+        border:1px solid #f0f0f0;
+        /* box-shadow: 0 2px 1px black ; */
         position: relative;
         }
         
@@ -1295,7 +1445,7 @@
         }
             
         .footer-news button i{
-            padding: 2px;
+            /* padding: 2px; */
           font-size: 1.8rem;
           color: white;
         
@@ -1492,6 +1642,22 @@
         margin-top: 4px;
         /* padding: 0 0 0 0; */
         color: gray;
+
+    }
+
+
+    .explore-main #show-more {
+        margin: 0 auto;
+        margin-top: 5vh;
+        /* text-align: center; */
+        width: 130px;
+        height: 40px;
+        border: 1px solid gray;
+        /* padding: 2.5vh 0; */
+        border-radius: .5vw;
+        font-size: .8rem;
+        font-weight: 600;
+        background-color: white;
     }
 }
 
@@ -1651,6 +1817,20 @@
     #explore-price {
         font-size: 3.5vw;
         font-weight: 600;
+    }
+
+    .explore-main #show-more {
+        margin: 0 auto;
+        margin-top: 5vh;
+        /* text-align: center; */
+        width: 100px;
+        height: 30px;
+        border: 1px solid gray;
+        /* padding: 2.5vh 0; */
+        border-radius: .5vw;
+        font-size: .8rem;
+        font-weight: 600;
+        background-color: white;
     }
 }
 
@@ -1861,14 +2041,30 @@
         justify-content: center;
         border-radius: 15px;
         width: 25rem;
-        height: 90vh;
+        height: 100vh;
         /* border: 5px solid red; */
     }
 
+    .travel-des-d1-text p {
+        color: grey;
+        text-align: center;
+        /* margin-top: 1vh; */
+        padding-top: 1vh;
+        /* border: 1px solid; */
+    }
     
+    .travel-title h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:580px) {
+   
+    .travel-title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
     .travel-des-card {
         /* margin-right: 3.5rem; */
         display: flex
@@ -1876,8 +2072,8 @@
         flex-direction: column;
         justify-content: center;
         border-radius: 15px;
-        width: 25rem;
-        height: 70vh;
+        width: 22rem;
+        height: 90vh;
         /* border: 5px solid red; */
     }  
     .card-badge {
@@ -1933,14 +2129,40 @@
         top: 40%;
         left: 77%;
     }
+    .travel-des-d1 .travel-des-d1-text button {
+        width: 8vw;
+        height: 6vh;
+        /* border: 1px solid red; */
+        padding: 0 0;
+        /* border-radius: 10px; */
+        border: none;
+        font-size: 1.1rem;
+        color: white;
+        background-color: rgb(24 167 199);
+    }
+
+
+    .travel-des-d1-text p {
+        color: grey;
+        text-align: center;
+        /* margin-top: 1vh; */
+        padding-top: 1vh;
+        /* border: 1px solid; */
+    }
     
-    
+  
 }
 
 
 
 
 @media only screen and (max-width:425px) {
+    .travel-container {
+        width: 100%;
+        background: white;
+        margin-top: 2rem;
+    }
+
     .travel-main {
         max-width: 90vw;
         margin: 0 auto;
@@ -1962,10 +2184,10 @@
         width: 10vw;
         height: 6vh;
         /* border: 1px solid red; */
-        padding: 0 1rem;
+        padding: 0 0;
         /* border-radius: 10px; */
         border: none;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: white;
         background-color: rgb(24 167 199);
     }
@@ -1986,14 +2208,14 @@
         flex-direction: column;
         justify-content: center;
         border-radius: 15px;
-        width: 22rem;
-        height: 50vh;
+        width: 18rem;
+        height: 90vh;
         /* border: 5px solid red; */
     }
 
     .card-badge {
-        width: 22%;
-        height: 14%;
+        width: 30%;
+        height: 8%;
         /* border: 1px solid; */
         border-radius: 15px;
         display: flex;
@@ -2004,8 +2226,8 @@
         box-shadow: 0 0 7px #f0f0f0;
         position: absolute;
         top: 5%;
-        left: -20%;
-        left: 1%;
+        left: -8%;
+        /* left: %; */
         padding: 0;
     }
     .card-badge img {
@@ -2044,13 +2266,63 @@
         left: 77%;
     }
     
+    .travel-des-d1-text p {
+        color: grey;
+        text-align: center;
+        /* margin-top: 1vh; */
+        padding-top: 1vh;
+        /* border: 1px solid; */
+    }
    
 
 }
 
 
 
+/* book ticket sections */
+@media (min-width:768px) and (max-width:1024px) {
+    .ticket-title h2 {
+        font-size: 1.5rem;
+    }
+}
 
 
 
+
+@media (min-width:425px) and (max-width:768px) {
+    .ticket-title h2 {
+        font-size: 1rem;
+    }
+    .ticket-title button {
+        padding: 1.8vh 2.5vw;
+        background-color: rgb(24 167 199);
+        color: white;
+        font-weight: 600;
+        font-size: 1.3vw;
+        border: none;
+        border-radius: .5vw;
+    }
+   
+}
+
+@media (min-width:320px) and (max-width:425px) {
+    .ticket-title h2 {
+        font-size: .8rem;
+    }
+
+    .ticket-title button {
+        padding: 1.8vh 2.5vw;
+        background-color: rgb(24 167 199);
+        color: white;
+        font-weight: 600;
+        font-size: 1.4vw;
+        border: none;
+        border-radius: .5vw;
+    }
+ 
+}
+
+
+@media only screen and (max-width:10px) {}
+@media only screen and (max-width:10px) {}
 @media only screen and (max-width:10px) {}
