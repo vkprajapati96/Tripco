@@ -207,7 +207,7 @@
 
     .hero-banner-container {
         position: absolute;
-        bottom: -10%;
+        bottom: -20%;
         left: 10%;
         right: 10%;
         /* margin: 0 auto; */
@@ -245,7 +245,7 @@
 
     .hero-banner-container {
         position: absolute;
-        bottom: -30%;
+        bottom: -25%;
         left: 10%;
         right: 10%;
         /* margin: 0 auto; */
@@ -272,10 +272,20 @@
         font-family: sans-serif;
         color: white;
         z-index: 999;
-        line-height: 4rem;
+        line-height: 2rem;
         font-size: 1.5rem;
         font-weight: 600;
         text-align: center;
+    }
+    #hero-img-text2 {
+        color: white;
+        z-index: 999;
+        font-size: 1.7vw;
+        font-weight: 600;
+        /* padding-block: 2rem; */
+        text-align: center;
+        line-height: 40px;
+        /* margin-top: 2.5rem; */
     }
 
     .hero-banner-d1-paras {
@@ -320,6 +330,7 @@
 }
 
 @media (min-width:540px) and (max-width:640px) {
+
     .hero {
         /* border-radius: 50px; */
         max-width: 90%;
@@ -327,10 +338,35 @@
         margin: 0 auto;
         /* border: 1px solid red; */
         /* position: relative; */
+
+        
     }
+
+    #hero-img-text1 {
+        font-family: sans-serif;
+        color: white;
+        z-index: 999;
+        line-height: 2rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #hero-img-text2 {
+        color: white;
+        z-index: 999;
+        font-size: 1.7vw;
+        font-weight: 600;
+        /* padding-block: 2rem; */
+        text-align: center;
+        line-height: 40px;
+        /* margin-top: 2.5rem; */
+    }
+
+
     .hero-banner-container {
         position: absolute;
-        bottom: -20%;
+        bottom: -25%;
         left: 10%;
         right: 10%;
         /* margin: 0 auto; */
@@ -401,16 +437,6 @@
         font-size: 1rem;
         flex-wrap: nowrap;
         /* font-family: sans-serif; */
-    }
-
-    #hero-img-text1 {
-        font-family: sans-serif;
-        color: white;
-        z-index: 999;
-        line-height: 4rem;
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-align: center;
     }
 
     .hero-banner-d2-desti {
@@ -554,10 +580,21 @@
         font-family: sans-serif;
         color: white;
         z-index: 999;
-        line-height: 4rem;
-        font-size: 1.2rem;
+        line-height: 2rem;
+        font-size: 1.1rem;
         font-weight: 600;
         text-align: center;
+    }
+
+    #hero-img-text2 {
+        color: white;
+        z-index: 999;
+        font-size: 1.8vw;
+        font-weight: 600;
+        /* padding-block: 2rem; */
+        text-align: center;
+        line-height: 40px;
+        /* margin-top: 2.5rem; */
     }
 
     .hero-banner-d2-desti {
@@ -625,10 +662,20 @@
         font-family: sans-serif;
         color: white;
         z-index: 999;
-        line-height: 4rem;
+        line-height: 1rem;
         font-size: 1rem;
         font-weight: 600;
         text-align: center;
+    }
+
+    #hero-img-text2 {
+        color: white;
+        z-index: 999;
+        font-size: .5rem;
+        font-weight: 600;
+        /* padding-block: 2rem; */
+        text-align: center;
+        line-height: 20px;
     }
 }
 
@@ -834,9 +881,19 @@
 }
 
 
-
-
-
+@media only screen and (max-width:320px) {
+    
+    #hero-img-text1 {
+        font-family: sans-serif;
+        color: white;
+        z-index: 999;
+        line-height: 1rem;
+        font-size: .7rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+}
 
 
 /* Navbar sections */
@@ -1932,9 +1989,27 @@
         text-align: center;
         color: gray;
     }
+
+    .adv-cards {
+        width: 100%;
+        /* border: 1px solid violet; */
+        display: grid;
+        padding: 0 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /* gap: 3rem; */
+        margin-top: 2rem;
+        grid-column-gap: 30px;
+        grid-row-gap: 3rem;
+        /* grid-template-columns: 20px; */
+        /* overflow-x: auto; */
+        /* padding: 0 .7rem; */
+    }
+
+
     
     .adv-card {
-        width: 40vw;
+        width: 80vw;
         height: 48vh;
         /* display: flex
 ; */
@@ -1944,6 +2019,17 @@
         position: relative;
         padding: .8rem 1rem 0 1.1rem;
         border: 2px dashed black;
+    }
+
+    #adv-badge {
+        width: 15vw;
+        height: 10vh;
+        position: absolute;
+        top: -8%;
+        left: -5%;
+        border-radius: 50%;
+        border: none;
+        /* border: 1px solid red; */
     }
     .adv-card p {
         margin: 1vh auto;
@@ -2306,6 +2392,11 @@
 }
 
 @media (min-width:320px) and (max-width:425px) {
+    .ticket-container {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
     .ticket-title h2 {
         font-size: .8rem;
     }
