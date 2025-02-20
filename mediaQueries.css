@@ -1,7 +1,8 @@
 @media only screen and (max-width:1259px) {
+   
     .hero-banner-d2-desti {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         flex-wrap: wrap;
         gap: .2rem;
     }
@@ -15,6 +16,7 @@
         gap: .3rem;
         align-items: center;
         justify-content: space-between;
+        /* text-wrap: wrap; */
     }
 
     #checkout {
@@ -26,54 +28,25 @@
 
 }
 
-@media only screen and(max-width:1140px) {
-
-
-    .hero-banner-d2-desti-place {
-        background: #f0f0f0;
-        padding: .4rem .2rem;
-        border-radius: 5px;
-        margin-top: .7rem;
-        color: black;
-        display: flex;
-        /* gap:.2rem; */
-        display: flex;
-        align-items: center;
-        font-size: .5rem;
-        flex-wrap: nowrap;
-        /* font-family: sans-serif; */
-    }
-
-    .hero-banner-d2-desti-places-search-btn {
-        /* flex: 1; */
-        /* border: 1px solid red; */
-        padding: .6rem 2.2rem;
-        /* width: 8vw; */
-        /* height: 2rem; */
-        margin-top: 27px;
-        color: white;
-        background-color: rgb(24 167 199);
-        border: none;
-        border-radius: 10px;
-        /* display: grid    ; */
-        /* grid-template-columns: ; */
-        justify-content: center;
-        align-items: center;
-        gap: 4px;
-        /* margin-left: 10px; */
-    }
-
-    #checkout {
-        /* margin-left: 0; */
-    }
-
-
-
-}
 
 
 
 @media only screen and (max-width:1106px) {
+    .hero-banner-container {
+        position: absolute;
+        bottom: -15%;
+        left: 10%;
+        right: 10%;
+        /* margin: 0 auto; */
+        padding: 2rem;
+        /* width: 90%; */
+        /* height: 30vh; */
+        background-color: white;
+        box-shadow: 2px 2px 1px #f0f0f0;
+        border-radius: 20px;
+        text-wrap: nowrap;
+    }
+
     .hero-banner-d2 {
         /* border: 1px solid; */
         margin-top: 1rem;
@@ -83,6 +56,17 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        /* text-wrap: wrap; */
+    }
+
+    .hero-banner-d2-desti {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap:2rem;
+        grid-row-gap: 1rem;
+        flex-wrap: wrap;
+        /* gap: .2rem; */
     }
 
 
@@ -90,17 +74,52 @@
         margin-top: 5px;
         /* grid-row-start:4; */
         /* grid-row-end: 4; */
+        display: flex;
         grid-column-start: 1;
-        grid-column-end: 3;
-
-
-        width: 90%;
+        grid-column-end: 5;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+        /* width: 90%; */
+            height: 3.5rem;
+        
     }
 
+    .hero-banner-d2-desti-places-search-btn i {
+        
+        font-size: 1.2rem;
+    
+
+}
 }
 
 
 @media only screen and (max-width:1024px) {
+    .hero-banner-d2-desti {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        flex-wrap: wrap;
+        /* gap: .2rem; */
+    }
+
+    .hero-banner-d2-desti-place {
+        background: #f0f0f0;
+        padding: .5rem .3rem;
+        border-radius: 5px;
+        margin-top: .7rem;
+        color: black;
+        display: flex;
+        gap: 4px;
+        display: flex;
+        align-items: center;
+        font-size: .9rem;
+        flex-wrap: nowrap;
+        font-weight: 600;
+        /* font-family: sans-serif; */
+    }
     #hero-img-text1 {
         font-family: sans-serif;
         color: white;
@@ -116,18 +135,39 @@
 
 
 @media (min-width:768px) and (max-width:860px) {
+    .hero-banner-container {
+        position: absolute;
+        bottom: -20%;
+        left: 10%;
+        right: 10%;
+        /* margin: 0 auto; */
+        padding: 2rem;
+        /* width: 90%; */
+        /* height: 30vh; */
+        background-color: white;
+        box-shadow: 2px 2px 1px #f0f0f0;
+        border-radius: 20px;
+        text-wrap: wrap;
+    }
 
     .hero-banner-d2-desti {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 7rem;
+        grid-column-gap: 10rem;
         grid-row-gap: 2rem;
         flex-wrap: wrap;
         /* gap: .2rem; */
     }
 
-
+    .hero-banner-d2-desti-places-search-btn {
+        margin-top: 5px;
+        /* grid-row-start: 4; */
+        /* grid-row-end: 4; */
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* width: 85%; */
+    }
 
 
     #hero-img-text1 {
@@ -159,15 +199,6 @@
         align-items: center;
     }
 
-    .hero-banner-d2-desti {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 7rem;
-        grid-row-gap: 1rem;
-        flex-wrap: wrap;
-        /* gap: .2rem; */
-    }
 
 
     .hero-banner-d1-paras p {
@@ -181,7 +212,7 @@
 
     .hero-banner-d2-desti-place {
         background: #f0f0f0;
-        padding: .5rem 1rem;
+        padding: .5rem .5rem;
         border-radius: 5px;
         margin-top: .7rem;
         color: black;
@@ -205,39 +236,9 @@
 
     }
 
-    .hero-banner-container {
-        position: absolute;
-        bottom: -20%;
-        left: 10%;
-        right: 10%;
-        /* margin: 0 auto; */
-        padding: 2rem;
-        /* width: 90%; */
-        /* height: 30vh; */
-        background-color: white;
-        box-shadow: 2px 2px 1px #f0f0f0;
-        border-radius: 20px;
-        text-wrap: nowrap;
-    }
 
+    
 
-    .hero {
-        /* border-radius: 50px; */
-        max-width: 90%;
-        height: 80vh;
-        margin: 0 auto;
-        /* border: 1px solid red; */
-        position: relative;
-    }
-
-    .hero-banner-d2-desti-places-search-btn {
-        margin-top: 5px;
-        /* grid-row-start: 4; */
-        /* grid-row-end: 4; */
-        grid-column-start: 1;
-        grid-column-end: 3;
-        width: 85%;
-    }
 }
 
 @media (min-width:640px) and (max-width:768px) {
@@ -245,7 +246,7 @@
 
     .hero-banner-container {
         position: absolute;
-        bottom: -25%;
+        bottom: -22%;
         left: 10%;
         right: 10%;
         /* margin: 0 auto; */
@@ -255,19 +256,8 @@
         background-color: white;
         box-shadow: 2px 2px 1px #f0f0f0;
         border-radius: 20px;
-        text-wrap: nowrap;
+        text-wrap: wrap;
     }
-
-    .hero-banner-d2-desti {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 7rem;
-        grid-row-gap: 1rem;
-        flex-wrap: wrap;
-        /* gap: .2rem; */
-    }
-  
     #hero-img-text1 {
         font-family: sans-serif;
         color: white;
@@ -297,10 +287,38 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 4rem;
-        grid-row-gap: 2rem;
+        grid-column-gap: 10rem;
+        grid-row-gap: 1rem;
         flex-wrap: wrap;
         /* gap: .2rem; */
+
+    }
+    
+
+
+    .hero-banner-d2-desti-places1{
+                font-size: .8rem;
+                color: black;
+    }
+
+    .hero-banner-d2-desti-place {
+        background: #f0f0f0;
+        padding: .5rem .3rem;
+        border-radius: 5px;
+        margin-top: .7rem;
+        color: black;
+        display: flex;
+        gap: 4px;
+        display: flex;
+        align-items: center;
+        font-size: .7rem;
+        /* flex-wrap: nowrap; */
+        font-weight: 600;
+        /* font-family: sans-serif; */
+    }
+    .hero-banner-d2-desti-place i {
+        color: rgb(24 167 199);
+        font-size: .8rem;
     }
 
     .hero-banner-d2-desti-places-search-btn {
@@ -309,10 +327,14 @@
         /* grid-row-end: 4; */
         grid-column-start: 1;
         grid-column-end: 3;
-        width: 95%;
+        /* width: 95%; */
+        height: 3rem;
     }
 
-    
+    .hero-banner-d1-paras {
+        display: flex;
+        gap: .8rem;
+    }    
 
     .hero-banner-d1-paras p {
         font-size: .9rem;
@@ -321,10 +343,10 @@
         /* border: 1px solid yellowgreen; */
     }
     .hero-banner-d1-last-searching {
-        font-size: .9rem;
+        font-size: .8rem;
         color: grey;
         display: flex;
-        gap: .5rem;
+        gap: .2rem;
         align-items: center;
     }
 }
@@ -376,7 +398,7 @@
         background-color: white;
         box-shadow: 2px 2px 1px #f0f0f0;
         border-radius: 20px;
-        text-wrap: nowrap;
+        text-wrap: wrap;
     }
     
     .hero-banner-d1-paras {
@@ -388,11 +410,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 4rem;
-        grid-row-gap: 2rem;
+        grid-column-gap: 9rem;
+        grid-row-gap: 1rem;
         flex-wrap: wrap;
         /* gap: .2rem; */
-    }
+    }  
 
     .hero-banner-d2-desti-places-search-btn {
         margin-top: 5px;
@@ -404,15 +426,15 @@
     }
 
     
-
     .hero-banner-d1-paras p {
-        font-size: .9rem;
+        font-size: .7rem;
         color: gray;
         font-weight: 500;
         /* border: 1px solid yellowgreen; */
     }
+  
     .hero-banner-d1-last-searching {
-        font-size: .9rem;
+        font-size: .7rem;
         color: grey;
         display: flex;
         gap: .5rem;
@@ -424,47 +446,31 @@
 
     .hero-banner-d2-desti-place {
         background: #f0f0f0;
-        padding: .5rem 1rem;
+        padding: .5rem .5rem;
         border-radius: 5px;
         margin-top: .7rem;
         color: black;
-        display: flex
-;
+        display: flex;
         gap: 4px;
-        display: flex
-;
+        display: flex;
         align-items: center;
-        font-size: 1rem;
+        font-size: .7rem;
         flex-wrap: nowrap;
         /* font-family: sans-serif; */
     }
 
-    .hero-banner-d2-desti {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
-        flex-wrap: wrap;
-        /* gap: .2rem; */
-    }
     .hero-banner-d2-desti-places-search-btn {
-        margin-top: 5px;
+        margin-top: 0;
         /* grid-row-start: 4; */
         /* grid-row-end: 4; */
-        /* grid-column-start: 1; */
-        /* grid-column-end: 3; */
-        width: 80%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        height: 2.5rem;
     }
 
-    .hero-banner-d2-desti-places-search-btn {
-        margin-top: 5px;
-        /* grid-row-start: 4; */
-        /* grid-row-end: 4; */
-        /* grid-column-start: 1; */
-        /* grid-column-end: 3; */
-        width: 95%;
-    }
+
+
 }
 
 
@@ -485,7 +491,7 @@
 
     .hero-banner-container {
         position: absolute;
-        bottom: -130px;
+        bottom: -23%;
         left: 10%;
         right: 10%;
         /* margin: 0 auto; */
@@ -495,9 +501,8 @@
         background-color: white;
         box-shadow: 2px 2px 1px #f0f0f0;
         border-radius: 20px;
-        text-wrap: nowrap;
+        text-wrap: wrap;
     }
-
     .hero-banner-d1-paras p {
         font-size: 1rem;
         color: gray;
@@ -525,12 +530,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
+        grid-column-gap: 5rem;
+        grid-row-gap: .5rem;
         flex-wrap: wrap;
         /* gap: .2rem; */
     }
-
     .hero-banner-d2-desti-places-search-btn {
         margin-top: 5px;
         /* grid-row-start: 4; */
@@ -575,6 +579,10 @@
         flex-wrap: nowrap;
         /* font-family: sans-serif; */
     }
+    .hero-banner-d2-desti-place i {
+        color: rgb(24 167 199);
+        font-size: .7rem;
+    }
 
     #hero-img-text1 {
         font-family: sans-serif;
@@ -597,22 +605,16 @@
         /* margin-top: 2.5rem; */
     }
 
-    .hero-banner-d2-desti {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
-        flex-wrap: wrap;
-        /* gap: .2rem; */
-    }
+    
     .hero-banner-d2-desti-places-search-btn {
         margin-top: 5px;
         /* grid-row-start: 4; */
         /* grid-row-end: 4; */
-        /* grid-column-start: 1; */
-        /* grid-column-end: 3; */
-        width: 80%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        height: 2.3rem;
+        font-size: .8rem;
     }
     .hero-banner-d1-paras {
         display: flex;
@@ -658,6 +660,20 @@
 
 
 @media only screen and (max-width:520px) {
+    .hero-banner-container {
+        position: absolute;
+        bottom: -25%;
+        left: 10%;
+        right: 10%;
+        /* margin: 0 auto; */
+        padding: 2rem;
+        /* width: 90%; */
+        /* height: 30vh; */
+        background-color: white;
+        box-shadow: 2px 2px 1px #f0f0f0;
+        border-radius: 20px;
+        text-wrap: wrap;
+    }
     #hero-img-text1 {
         font-family: sans-serif;
         color: white;
@@ -811,12 +827,19 @@
         flex-wrap: nowrap;
         /* font-family: sans-serif; */
     }
-
     .hero-banner-d2-desti-places-search-btn {
         margin-top: 5px;
-        width: 85%;
+        width: 100%;
+        height: 30px;
+        font-size: .7rem;
     }
 
+    .hero-banner-d2-desti-places-search-btn I {
+        /* margin-top: 5px; */
+        /* width: 100%; */
+        /* height: 30px; */
+        font-size: .8rem;   
+    }
     .hero-banner-d2-desti-places1{
     font-size: .6rem;
     }
@@ -882,6 +905,20 @@
 
 
 @media only screen and (max-width:320px) {
+
+    .hero-banner-d1-paras {
+        display: flex;
+        gap: 1rem;
+    }
+    .hero-banner-d2-desti {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: .5rem;
+        flex-wrap: wrap;
+        /* gap: .2rem; */
+    }
     
     #hero-img-text1 {
         font-family: sans-serif;
@@ -998,23 +1035,37 @@
 
 /* popular sectioons */
 
+@media only screen and (max-width:1300px) {
+    .popular-desc {
+        color: gray;
+        /* border: 1px solid; */
+        /* padding: 0 8px 0 0; */
+        margin-right: 0;
+        font-weight: 500;
+        font-size: 1rem;
+        /* padding-right: 1rem; */
+        /* font-family: serif; */
+    }
+}
 
 @media only screen and (max-width:1024px) {
 
     .popular-d1 {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        /* justify-content: space-between; */
         align-items: center;
         /* border: 1px solid red; */
         padding: 0 2rem;
-        gap: 8rem;
+        gap: 2rem;
     }
-
     .popular-title {
         width: 80%;
         /* font-size: 1.5rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
 
     .popular-title h2 {
         font-size: 1.8rem;
@@ -1027,15 +1078,20 @@
         font-size: 1rem;
     }
 
+  
     .popular-desc {
         color: gray;
-        padding: 0 0 0 2rem;
-        /* margin-right: !important; */
-        font-weight: 500;
-        font-family: serif;
         /* border: 1px solid; */
+        /* padding: 0 8px 0 0; */
+        margin-right: 0;
+        font-weight: 500;
+        text-align: center;
+        font-size: 1rem;
+        /* padding-right: 1rem; */
+        /* font-family: serif; */
+        /* margin: 0 auto; */
+        max-width: 80%;
     }
-
     .popular-cards {
         width: 100%;
         /* border: 1px solid violet; */
@@ -1092,10 +1148,17 @@
         padding-top: 4rem;
     }
 
-    .popular-title h2 {
-        font-size: 1rem;
-        font-weight: 600;
-    }
+  .popular-title h2 {
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.popular-title p {
+    color: grey;
+    padding: 4px 0 0 0;
+    font-size: 1.1rem;
+}
 }
 
 
@@ -1110,7 +1173,7 @@
         align-items: center;
         /* border: 1px solid red; */
         /* padding: 0 2rem; */
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .popular-title {
@@ -1128,9 +1191,8 @@
     .popular-title p {
         color: grey;
         padding: 4px 0 0 0;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
-
     .popular-desc {
         text-align: center;
         color: gray;
@@ -1192,13 +1254,20 @@
         font-family: serif;
         /* border: 1px solid; */
         font-size: .9rem;
+        max-width: 90%;
     }
 }
 
 @media only screen and (max-width:425px) {
+    .popular-title p {
+        color: grey;
+        padding: 4px 0 0 0;
+        font-size: .9rem;
+    }
+
+   
     .popular-d1 {
-        display: flex
-;
+        display: flex;
         flex-direction: column;
         /* margin: 0 auto; */
         /* justify-content: space-between; */
@@ -1213,11 +1282,7 @@
         font-weight: 600;
     }
    
-    .popular-title p {
-        color: grey;
-        padding: 4px 0 0 0;
-        font-size: .8rem;
-    }
+ 
 
     .popular-desc {
         text-align: center;
@@ -1226,7 +1291,7 @@
         font-weight: 500;
         font-family: serif;
         /* border: 1px solid; */
-        font-size: .7rem;
+        font-size: .9rem;
     }
     .popular-img-title h5 {
         font-weight: 600;
@@ -2120,7 +2185,7 @@
     }
 
     .travel-des-card {
-        /* margin-right: 3.5rem; */
+        margin-right:0;
         display: flex
     ;
         flex-direction: column;
@@ -2359,8 +2424,59 @@
         padding-top: 1vh;
         /* border: 1px solid; */
     }
-   
+}
 
+
+    @media (min-width:320px) and (max-width:350px) {
+        .travel-des-d1-text h3 {
+            font-size: .8rem;
+            /* border: 1px solid; */
+            margin-top: 1vh;
+            text-align: center;
+            padding-top: .2rem;
+        }
+        .travel-title h2 {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .travel-title p {
+            color: gray;
+            /* font-weight: 600; */
+            font-size: .9rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .travel-des-d1 .travel-des-d1-text button {
+            width: 12vw;
+            height: 6vh;
+            /* border: 1px solid red; */
+            padding: 0 0;
+            /* border-radius: 10px; */
+            border: none;
+            font-size: 1rem;
+            color: white;
+            background-color: rgb(24 167 199);
+        }
+        .travel-des-d1-text p {
+            color: grey;
+            text-align: center;
+            /* margin-top: 1vh; */
+            padding-top: 1vh;
+            font-size: .8rem;
+            /* border: 1px solid; */
+        }
+        .travel-des-d1 button {
+            background: rgb(24 167 199);
+            border-radius: 12px;
+            color: white;
+            font-size: .8rem;
+            width: 100%;
+            /* height: 5rem; */
+            padding: .7rem .2rem;
+            border: none;
+            /* margin: 0 0 0 6px; */
+            /* border: 1px solid red; */
+        }
 }
 
 
