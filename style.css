@@ -949,18 +949,18 @@ gap: 0;
     width: 100%;
     /* border: 1px solid violet; */
     display: flex;
-    gap:3rem;
+    gap:5rem;
     margin-top: 4rem;
     /* overflow-x: auto; */
-    /* padding: 0 .7rem; */
+    /* padding: 0 1rem; */
     
 
 
 }
 
 .adv-card {
-    width: 20vw;     
-    height: 50vh;
+    width: 18vw;     
+    height: 55vh;
     /* display: flex; */
     /* flex-direction: column; */
     gap: 3rem;
@@ -974,7 +974,7 @@ gap: 0;
 
 .adv-card-img {
     width: 95%;  
-    height: 40vh; 
+    height: 44vh; 
     border-radius: 2vh;
 
 }
