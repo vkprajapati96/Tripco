@@ -905,6 +905,21 @@
 
 
 @media only screen and (max-width:320px) {
+    .hero-banner-container {
+        position: absolute;
+        bottom: -27%;
+        left: 10%;
+        right: 10%;
+        /* margin: 0 auto; */
+        padding: 1rem;
+        /* width: 90%; */
+        /* height: 30vh; */
+        background-color: white;
+        box-shadow: 2px 2px 1px #f0f0f0;
+        border-radius: 20px;
+        text-wrap: nowrap;
+    }
+
 
     .hero-banner-d1-paras {
         display: flex;
@@ -1314,10 +1329,9 @@
         width: 100%;
         /* margin: 0 auto; */
         /* border: 1px solid black; */
-        margin-top: 8rem;
+        margin-top: 5rem;
         padding-top: 3rem;
     }
-
     .popular-title p {
         color: grey;
         padding: 4px 0 0 0;
@@ -1503,9 +1517,10 @@
     }
 
     .footer-news {
-        display: flex
-    ;
-        flex-direction: column;
+        display: grid;
+        /* flex-direction: column; */
+        grid-column-start:1 ;
+        grid-column-end:3 ;
         gap: 1.5rem;
         /* padding-left: 3rem; */
         /* max-width: 00px; */
@@ -1513,15 +1528,18 @@
         /* border: 1px solid; */
         align-items: center;
        }
+       .footer-news h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
 
-
-       .footer-inp{
+       .footer-inp {
+        margin: 0 auto;
         position: relative;
         margin-top: 1vh;
         width: 200px;
         /* border: 1px solid; */
-        }
-        
+    }        
         .footer-about {
             display: flex;
             flex-direction: column;
@@ -1976,6 +1994,48 @@
 
 
 
+@media only screen and (max-width:320px) {
+
+
+.explore-d1 {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* padding-left: 12px; */
+    /* border: 1px solid; */
+    gap: .1rem;
+}
+
+.explore-title p {
+    font-size: .7rem;
+    color: grey;
+    padding: 2px 0 0 6px;
+}
+
+#explore-card-img-badge {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    background-color: #f0f0f0;
+    font-weight: 600;
+    font-size: .6rem;
+    padding: 4px 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+#explore-card-img-badge i {
+    color: yellow;
+    font-size: 0.6rem;
+    /* background-color: yellow; */
+}
+
+}
 
 
 
@@ -2121,6 +2181,28 @@
     }
      
 
+}
+
+@media only screen and (max-width:320px) {
+
+    .adv-cards {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        gap: 4rem;
+        margin-top: 3rem;
+        padding: 0 3rem;
+    }
+#adv-badge {
+    width: 20vw;
+    height: 12vh;
+    position: absolute;
+    top: -9%;
+    left: -10%;
+    border-radius: 50%;
+    border: none;
+    /* border: 1px solid red; */
+}
 }
 
 /* trave section */
@@ -2551,6 +2633,15 @@
         font-size: .8rem;
     }
 
+    .travel-des-d1-text p {
+        color: grey;
+        /* text-align: center; */
+        /* margin-top: 1vh; */
+        padding: 0;
+        font-size: .7rem;
+        /* border: 1px solid red; */
+    }
+
     .ticket-title button {
         padding: .6rem 1.4rem;
         background-color: rgb(24 167 199);
@@ -2575,6 +2666,82 @@
 }
 
 
-@media only screen and (max-width:10px) {}
+@media only screen and (max-width:320px) {
+    .travel-container {
+        width: 100%;
+        background: white;
+        margin-top: 2rem;
+    }
+   
+    .travel-des-card {
+        /* margin-right: 3.5rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+        width: 15.5rem;
+        height: 90vh;
+        /* border: 5px solid red; */
+    }
+    .card-badge {
+        width: 36%;
+        height: 8%;
+        /* border: 1px solid; */
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: white;
+        box-shadow: 0 0 7px #f0f0f0;
+        position: absolute;
+        top: 5%;
+        left: -14%;
+        padding: 0;
+    }
+
+    .badge2 {
+        position: absolute;
+        top: 80%;
+    }
+    
+    .badge3 {
+        position: absolute;
+        top: 40%;
+        left: 77%;
+    }
+   
+    .card-badge-para:nth-child(2) {
+        color: gray;
+        font-size: .6rem;
+    }
+.card-badge img {
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    width: 18%;
+    height: 45%;
+    border-radius: 50px;
+}
+    
+    .travel-des-d1 .travel-des-d1-text button {
+        width: 15vw;
+        height: 6vh;
+        /* border: 1px solid red; */
+        /* padding: 0 1rem; */
+        /* border-radius: 10px; */
+        border: none;
+        font-size: 1rem;
+        color: white;
+        background-color: rgb(24 167 199);
+    }
+}
+
+
+
+
+
+
 @media only screen and (max-width:10px) {}
 @media only screen and (max-width:10px) {}
