@@ -395,16 +395,16 @@ body {
     width: 100%;
     /* border: 1px solid violet; */
     display: flex;
-    gap:3.9rem;
+    gap:3.2rem;
     margin-top: 2rem;
     overflow-x: auto;
-    padding: 0 0;
+    padding-left:.5rem;
 
 }
 
 .popular-card {
     width: 19vw;     
-    height: 55vh;
+    height: 48vh;
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -524,7 +524,8 @@ body {
 
 .travel-des-d1 {
     border-radius: 15px;
-    max-width: 400px;
+    /* max-width: 510px; */
+    width: 40%;
     /* height: 90vh; */
     display: flex;
     flex-direction: column;
@@ -540,6 +541,11 @@ body {
     gap: 5px;
     justify-content: flex-start;
     padding: 0 0 0 0;
+/* border: 1px solid; */
+}
+
+.travel-des-d1-text p {
+   font-size: 1.1rem;
 /* border: 1px solid; */
 }
 #travel-btn2{
@@ -592,21 +598,22 @@ body {
 
 
 .travel-des-card {
-    margin-right:7rem;
+    margin-right:5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 15px;
-    width: 36%;
-    height: 92vh;
+    border-radius: 40px;
+    width:34%;
+    height:95vh;
     /* padding-right: 3rem; */
     /* border: 5px solid red; */
 
 }
 
 .travel-des-card-img {
-    width: 100%;
+    width:100%;
     height: 100%;
+    border-radius: 40px;
     position: relative;
 }
 
@@ -615,7 +622,7 @@ body {
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
     /* background-position: initial; */
-    border-radius: 15px;
+    border-radius: 40px;
     width: 100%;
     height: 100%;
 }

@@ -1071,7 +1071,7 @@
         /* justify-content: space-between; */
         align-items: center;
         /* border: 1px solid red; */
-        padding: 0 2rem;
+        padding: 0 ;
         gap: 2rem;
     }
     .popular-title {
@@ -1111,26 +1111,31 @@
         width: 100%;
         /* border: 1px solid violet; */
         display: flex;
-        gap: 2rem;
+        gap: 3.2rem;
         margin-top: 2rem;
         overflow-x: auto;
-        padding: 0 2rem;
+        padding: 0;
     }
-
 
 
     .popular-card {
         width: 40vw;
-        height: 53vh;
+        height: 64vh;
         display: flex;
         flex-direction: column;
         gap: 2vh;
         flex-shrink: 0;
         /* padding: 0 0; */
     }
-
     br {
         display: none;
+    }
+
+    .popular-card-img {
+        width: 100%;
+        height: 48vh;
+        border-radius: 5vh;
+        position: relative;
     }
 
     .popular-img-title h5 {
@@ -1218,14 +1223,30 @@
         font-size: 1rem;
     }
 
+    .popular-cards {
+        width: 100%;
+        /* border: 1px solid violet; */
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+        overflow-x: auto;
+        padding: 0;
+    }
+
     .popular-card {
-        width: 80vw;
-        height: 53vh;
+        width: 40vw;
+        height: 58vh;
         display: flex;
         flex-direction: column;
         gap: 2vh;
         flex-shrink: 0;
         /* padding: 0 0; */
+    }
+    .popular-card-img {
+        width: 100%;
+        height: 42vh;
+        border-radius: 5vh;
+        position: relative;
     }
 
     .popular-img-title {
@@ -1233,12 +1254,17 @@
         display: flex;
         flex-direction: column;
     }
+    .popular-img-title h5 {
+        font-weight: 600;
+        font-size: 1rem;
+        color: black;
+    }
 
     .popular-img-title p {
         display: flex;
         align-items: center;
         gap: 2px;
-        font-size: 1.2rem;
+        font-size: .8rem;
         margin-top: 4px;
         /* padding: 0 0 0 0; */
         color: gray;
@@ -1274,6 +1300,27 @@
 }
 
 @media only screen and (max-width:425px) {
+
+    
+
+    .popular-card {
+        width: 90vw;
+        height: 62vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        flex-shrink: 0;
+        /* padding: 0 0; */
+    }
+
+    .popular-card-img {
+        width: 100%;
+        height: 48vh;
+        border-radius: 5vh;
+        position: relative;
+    }
+
+
     .popular-title p {
         color: grey;
         padding: 4px 0 0 0;
@@ -1324,6 +1371,7 @@
     }
 }
 
+
 @media only screen and (max-width:320px) {
     .popular-container {
         width: 100%;
@@ -1345,6 +1393,21 @@
         font-family: serif;
         /* border: 1px solid; */
         font-size: .7rem;
+    }
+
+    .popular-img-title h5 {
+        font-weight: 600;
+        font-size: .8rem;
+        color: black;
+    }
+    .popular-img-title p {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: .6rem;
+        margin-top: 4px;
+        /* padding: 0 0 0 0; */
+        color: gray;
     }
 }
 
@@ -1448,7 +1511,21 @@
         color: white;
     }
     
-        
+    .popular-img-title h5 {
+        font-weight: 600;
+        font-size: 1rem;
+        color: black;
+    }
+
+    .popular-img-title p {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: .8rem;
+        margin-top: 4px;
+        /* padding: 0 0 0 0; */
+        color: gray;
+    }
 
     }
 
@@ -2338,18 +2415,30 @@
 
     .travel-des-d1 {
         border-radius: 15px;
-        max-width: 400px;
+        /* max-width: 400px; */
+        width: 100%;
         /* height: 90vh; */
-        display: flex
-    ;
+        display: flex;
         flex-direction: column;
         gap: 3rem;
         padding: 1rem;
         /* padding-right: 6rem; */
         /* border: 1px solid; */
+        align-items: center;
+    }    
+    
+    .travel-des-d1 button {
+        background: rgb(24 167 199);
+        border-radius: 12px;
+        color: white;
+        font-size: 1rem;
+        width: 50%;
+        /* height: 5rem; */
+        padding: .9rem .4rem;
+        border: none;
+        /* margin: 0 0 0 6px; */
+        /* border: 1px solid red; */
     }
-    
-    
     .travel-des-d1-text {
         align-items: center;
         display: flex
@@ -2372,19 +2461,7 @@
         color: white;
         background-color: rgb(24 167 199);
     }
-    .travel-des-d1 button {
-        background: rgb(24 167 199);
-        border-radius: 12px;
-        color: white;
-        font-size: 1rem;
-        width: 100%;
-        /* height: 5rem; */
-        padding: .9rem .4rem;
-        border: none;
-        /* margin: 0 0 0 6px; */
-        /* border: 1px solid red; */
-    }
-
+   
     .travel-des-card {
         margin-right:0;
         display: flex
@@ -2503,6 +2580,18 @@
     }
     
   
+}
+
+@media (min-width:320px) and (max-width:453px) {
+
+.travel-des-d1-text h3 {
+    font-size: 1rem;
+    /* border: 1px solid; */
+    color: #333333;
+    margin-top: 1vh;
+    padding-top: .2rem;
+}
+
 }
 
 
