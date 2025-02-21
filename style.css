@@ -106,7 +106,7 @@ body {
 .hero {
     /* border-radius: 50px; */
     max-width: 90%;
-    height: 90vh;
+    height: 80vh;
     margin: 0 auto;
     /* border: 1px solid red;  */
     /* position: relative; */
@@ -286,20 +286,23 @@ body {
 
 
 }
+.hero-banner-d2-desti-places1{
+    color: gray;
+}
 
 .hero-banner-d2-desti-place {
     background: #f0f0f0;
     padding: .5rem 1rem;
     border-radius: 5px;
     margin-top: .7rem;
-    color: black;
+    /* color: gray; */
     display: flex;
     gap: 4px;
     display: flex;
     align-items: center;
     font-size:.9rem;
     flex-wrap: nowrap;
-    font-weight: 600;
+    font-weight: 500;
     /* font-family: sans-serif; */
 }
 
@@ -366,7 +369,8 @@ body {
 
 .popular-title h2 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
+    color: #333333;
 }
 
 .popular-title p {
@@ -411,7 +415,7 @@ body {
 
 .popular-card-img {
     width: 100%;  
-    height: 39vh; 
+    height: 36vh; 
     border-radius: 5vh;
     position: relative;
 }
@@ -447,7 +451,7 @@ body {
 .popular-img-title h5 {
     font-weight: 600;
     font-size: 1.2rem;
-    color: black;
+    color: #3D3D3D;
 }
 
 .popular-img-title p {
@@ -496,6 +500,7 @@ body {
 .travel-title h2 {
     font-size: 2.5rem; 
     text-align: center;
+    color: #333333;
 }
 
 .travel-title p {
@@ -558,8 +563,9 @@ body {
 }
 
 .travel-des-d1-text h3 {
-    font-size: clamp(1rem, 4vw, 1.2rem); 
+    font-size:1.4rem; 
     /* border: 1px solid; */
+    color: #333333;
     margin-top: 1vh;
     padding-top: .2rem;
 }
@@ -591,8 +597,8 @@ body {
     flex-direction: column;
     justify-content: center;
     border-radius: 15px;
-    width: 38%;
-    height: 98vh;
+    width: 36%;
+    height: 92vh;
     /* padding-right: 3rem; */
     /* border: 5px solid red; */
 
@@ -615,8 +621,8 @@ body {
 }
 
 .card-badge {
-    width: 35%;
-    height: 8%;
+    width: 40%;
+    height: 10%;
 
     /* border:1px solid; */
     border-radius: 15px;
@@ -625,7 +631,7 @@ body {
     justify-content: center;
     gap: 8px;
     background-color: white;
-    box-shadow: 0 0 7px #f0f0f0;
+    box-shadow: 0 0 10px #f0f0f0;
     position: absolute;
     top: 10%;
     left: -20%;
@@ -713,7 +719,9 @@ justify-content: flex-start;
 
 .explore-title h2 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
+    color: #333333;
+
 }
 
 .explore-title p {
@@ -820,7 +828,7 @@ grid-row-gap: 2.5rem;
 
 .explore-card-img {
     width: 100%;  
-    height: 42vh; 
+    height: 38vh; 
     border-radius: 5vh;
     position: relative;
 }
@@ -869,20 +877,22 @@ grid-row-gap: 2.5rem;
 display: flex;
 flex-direction: column;
 gap: 0;
+
 /* border: 1px  solid; */
 }
 
 .explore-img-title-1 h5 {
-    font-weight: 600;
-    font-size: 1.5vw;
-    color: black;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #333333;
+    
 }
 
 .explore-img-title-1 p {
     display: flex;
     align-items: center;
     gap: 2px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     margin-top: 4px;
     /* padding:0 0 0 0 ; */
@@ -897,7 +907,9 @@ gap: 0;
 
 #explore-price{
     font-size: 1.5vw;
-    font-weight: 600;
+    font-weight: 500;
+    color: #333333;
+
 }
 
 .explore-main #show-more {
@@ -912,6 +924,8 @@ gap: 0;
     font-size: 1rem;
     font-weight: 600;
     background-color:white;
+    color: #333333;
+
 }
 /* adventure section */
 .adv-container{
@@ -936,6 +950,8 @@ gap: 0;
 }
 .adv-title h2{
     font-size: 2.5rem;
+    color: #333333;
+
     /* font-weight: 600; */
 }
 .adv-title p{
@@ -960,7 +976,7 @@ gap: 0;
 
 .adv-card {
     width: 18vw;     
-    height: 55vh;
+    height: 40vh;
     /* display: flex; */
     /* flex-direction: column; */
     gap: 3rem;
@@ -973,8 +989,8 @@ gap: 0;
 }
 
 .adv-card-img {
-    width: 95%;  
-    height: 44vh; 
+    width: 92%;  
+    height: 32vh; 
     border-radius: 2vh;
 
 }
@@ -1009,9 +1025,9 @@ gap: 0;
 }
 
 .adv-card p{
-    /* padding-bottom: ; */
+    padding:.4rem 0 ;
     text-align: center;
-    margin: 2vh auto;
+    margin: 0 auto;
     color: gray;
     letter-spacing: .2rem;
     /* border: 1px solid; */
